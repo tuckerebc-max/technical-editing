@@ -1,0 +1,11 @@
+{
+  "ledger_id":"TE-LEDGER-example-001",
+  "run_id":"MWM-TE-example-001",
+  "finding_ids":["TE-20260813-0001"],
+  "open_count":1,
+  "blocking_count":0,
+  "escalation_count":1,
+  "release_disposition":"ready_with_conditions",
+  "owner_groups":["production"],
+  "last_updated":"2026-08-13"
+}

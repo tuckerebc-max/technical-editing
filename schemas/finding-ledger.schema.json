@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/finding-ledger.schema.json",
+  "title":"MWM TE Finding Ledger",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["ledger_id","run_id","finding_ids","open_count","blocking_count","escalation_count","release_disposition","owner_groups"],
+  "properties":{
+    "ledger_id":{"type":"string","pattern":"^TE-LEDGER-[A-Za-z0-9._-]+$"},
+    "run_id":{"type":"string"},
+    "finding_ids":{"type":"array","items":{"type":"string","pattern":"^TE-[A-Za-z0-9._-]+$"}},
+    "open_count":{"type":"integer","minimum":0},
+    "blocking_count":{"type":"integer","minimum":0},
+    "escalation_count":{"type":"integer","minimum":0},
+    "release_disposition":{"type":"string","enum":["ready","ready_with_conditions","not_ready"]},
+    "owner_groups":{"type":"array","items":{"type":"string"}},
+    "last_updated":{"type":["string","null"]}
+  }
+}

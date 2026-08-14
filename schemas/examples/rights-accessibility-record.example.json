@@ -1,0 +1,14 @@
+{
+  "record_id":"PERM-003",
+  "object_id":"FIG-003",
+  "rights_status":"licensed",
+  "permission_evidence":"MWM-RIGHTS-DECISION-UNSET",
+  "credit_line":"Credit line pending project decision.",
+  "rights_owner":"Rights owner pending confirmation.",
+  "alternate_text_status":"needs_review",
+  "alternate_text_record_id":"ALT-003",
+  "accessibility_evidence":"Format-specific review pending.",
+  "output_format":"docx",
+  "status":"needs_review",
+  "dependencies":["ALT-003"]
+}

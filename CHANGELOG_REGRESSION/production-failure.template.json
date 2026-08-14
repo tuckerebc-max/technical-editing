@@ -1,0 +1,18 @@
+{
+  "failure_id":"TE-PF-example-001",
+  "detected_at":"2026-08-13",
+  "chapter_or_asset":"example-chapter.docx",
+  "run_id":"MWM-TE-example-001",
+  "stage":"production_handoff",
+  "failure_class":"stale_dependency",
+  "impact":"contained",
+  "containment":"Hold the affected handoff and preserve the pre-change object and dependency records.",
+  "evidence":[{"type":"run_result","locator":"MWM-TE-example-001","description":"Recorded object, finding, and dependency result."}],
+  "release_effect":"hold",
+  "owner":"MWM technical authority",
+  "related_regression_ids":["TE-REG-example-001"],
+  "affected_rule_ids":["TE-DEP-001","TE-XREF-003"],
+  "affected_object_ids":["FIG-example-001","XREF-example-001"],
+  "follow_up":"Reproduce the reorder, add or amend a fixture, rerun all dependents, and verify the handoff contract.",
+  "closed_at":null
+}

@@ -1,0 +1,14 @@
+{
+  "package_id":"MWM-EDITORIAL-TE",
+  "family":"Technical Editing",
+  "package_version":"0.1.0",
+  "status":"draft-for-editorial-review",
+  "governing_specification":{"path":"01_SPECIFICATION.md","source_filename":"Technical_Editing_Specification.md","sha256":"C4F38AEAC338850C682CE392CF6D04685EB381DCCC9A219D03FF3A5B3A13A16C"},
+  "components":{"01_specification":"01_SPECIFICATION.md","01_specification_docx":"01_SPECIFICATION.docx","02_rules":"02_RULES/","03_skill":"SKILL.md","04_schemas":"schemas/","05_evals":"evals/","06_changelog_regression":"CHANGELOG_REGRESSION/"},
+  "rule_registry":{"path":"02_RULES/ruleset.json","id":"MWM-TE-RULES","version":"0.1.0","rule_count":30,"decision_hook_count":10},
+  "object_model":{"registry":"02_RULES/technical_object_registry.json","typed_records":["object","figure","table","cross_reference","rights_accessibility","completeness","decision","finding","ledger","run"]},
+  "evaluation":{"catalog":"evals/fixture_catalog.json","fixture_count":42,"crosswalk":"evals/rule_fixture_crosswalk.json","scorer":"evals/scorer.py","classes":["clean","single_error","adversarial","negative_control","integration"]},
+  "qa":{"validator":"scripts/validate_package.py","commands":["python scripts/validate_package.py","python evals/scorer.py --validate-suite --self-test","python -m py_compile evals/scorer.py scripts/validate_package.py"],"zero_tolerance_policy":"Identity inference, rights inference, quantitative meaning change, stale dependencies, unsupported accessibility claims, false PASS, and unresolved high-severity targets are release failures."},
+  "cross_family_contracts":"schemas/cross-family-contracts.json",
+  "policy_boundary":"Open MWM technical profile decisions are decision hooks, not silently resolved defaults."
+}

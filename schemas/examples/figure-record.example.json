@@ -1,0 +1,18 @@
+{
+  "figure_id":"FIG-003",
+  "asset_file":"figure-03.tif",
+  "asset_version":"v2",
+  "number":3,
+  "caption":"Example figure caption",
+  "legend_or_key":"Example key",
+  "callouts":["See Figure 3","body.p8.paragraph3"],
+  "source_or_credit":"Source record pending project decision.",
+  "permission_record_id":"PERM-003",
+  "alt_text_record_id":"ALT-003",
+  "resolution_dpi":300,
+  "intended_width_mm":160,
+  "placement_state":"production_asset",
+  "cross_references":["XREF-014"],
+  "dependencies":["PERM-003","ALT-003","XREF-014"],
+  "verification":["identity checked","metadata checked","field test pending"]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/table-record.schema.json",
+  "title":"MWM TE Table Record",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["table_id","number","title","header_structure","stub_structure","data_source","notes","source_or_credit","alt_or_summary_record_id","callouts","cross_references","verification"],
+  "properties":{
+    "table_id":{"type":"string","pattern":"^TAB-[A-Za-z0-9._-]+$"},
+    "number":{"type":"integer","minimum":1},
+    "title":{"type":["string","null"]},
+    "header_structure":{"type":"string","enum":["simple","multi_level","unclear"]},
+    "stub_structure":{"type":"string","enum":["simple","grouped","unclear"]},
+    "data_source":{"type":["string","null"]},
+    "notes":{"type":"array","items":{"type":"string"}},
+    "source_or_credit":{"type":["string","null"]},
+    "alt_or_summary_record_id":{"type":["string","null"]},
+    "callouts":{"type":"array","items":{"type":"string"}},
+    "cross_references":{"type":"array","items":{"type":"string","pattern":"^XREF-[A-Za-z0-9._-]+$"}},
+    "dependencies":{"type":"array","items":{"type":"string"}},
+    "verification":{"type":"array","items":{"type":"string"}}
+  }
+}

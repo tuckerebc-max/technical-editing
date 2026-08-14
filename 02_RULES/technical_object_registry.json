@@ -1,0 +1,9 @@
+{
+  "registry_id":"MWM-TE-OBJECT-REGISTRY",
+  "version":"0.1.0",
+  "object_types":["figure","table","heading","appendix","note","equation","link","cross_reference","caption","asset"],
+  "common_fields":["object_id","object_type","label","title_or_caption","source_locator","callouts","dependencies","status","stage"],
+  "protected_content":["official_names","formal_titles","direct_quotations","source_terms","data_values","statistical_symbols","equations"],
+  "owner_categories":["style","technical","design","accessibility","rights","production","proof","citation","substantive"],
+  "identity_rule":"Stable object identity must link manuscript, asset, structured, and proof representations; visual similarity is insufficient."
+}

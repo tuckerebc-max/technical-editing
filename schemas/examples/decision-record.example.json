@@ -1,0 +1,15 @@
+{
+  "decision_id":"TE-DEC-example-001",
+  "object_id":"FIG-003",
+  "question":"Are live Word fields required at this production stage?",
+  "evidence":[{"type":"field_inspection","locator":"example-chapter.docx#body.p8.paragraph3","description":"Visible reference is static text."}],
+  "owner":"MWM production authority",
+  "options":["Require live field and rerun reorder test","Permit static text under an approved production profile"],
+  "consequences":["A live-field requirement changes the handoff check.","A static policy requires explicit acceptance and proof dependency."],
+  "requested_decision":"Record the active cross-document/field policy.",
+  "status":"open",
+  "decision":null,
+  "decided_by":null,
+  "decided_at":null,
+  "decision_hook_id":"TE-DH-002"
+}

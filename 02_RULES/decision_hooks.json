@@ -1,0 +1,18 @@
+{
+  "decision_set_id":"MWM-TE-DECISION-HOOKS",
+  "version":"0.1.0",
+  "status":"open",
+  "runtime_default":"Conservative: preserve observed state, record uncertainty, and route to a human owner; do not invent a technical profile.",
+  "hooks":[
+    {"hook_id":"TE-DH-001","question":"Which fields are required for every MWM figure and table record?","owner":"MWM editorial authority","blocking_if_unresolved":true,"default_behavior":"Record available fields and mark missing requirements not_ready."},
+    {"hook_id":"TE-DH-002","question":"Are live Word fields required at author handoff, or may static references be accepted?","owner":"MWM production authority","blocking_if_unresolved":true,"default_behavior":"Test field state; do not silently convert or accept static text."},
+    {"hook_id":"TE-DH-003","question":"Which output-format accessibility standard and test method is active?","owner":"MWM accessibility/production authority","blocking_if_unresolved":true,"default_behavior":"Flag format-specific accessibility gaps without claiming conformance."},
+    {"hook_id":"TE-DH-004","question":"What caption/title placement and separation profile applies?","owner":"MWM production/design authority","blocking_if_unresolved":false,"default_behavior":"Record observed placement and escalate conflicts."},
+    {"hook_id":"TE-DH-005","question":"What is the alt-text versus long-description workflow and owner?","owner":"MWM accessibility authority","blocking_if_unresolved":true,"default_behavior":"Flag missing description records and route; never write semantic alt text from inference."},
+    {"hook_id":"TE-DH-006","question":"Who owns permissions decisions and what evidence threshold is sufficient?","owner":"MWM rights authority","blocking_if_unresolved":true,"default_behavior":"Set rights status unknown or pending and escalate."},
+    {"hook_id":"TE-DH-007","question":"Which statistical and measurement notation rules are adopted for each domain?","owner":"MWM editorial/domain authority","blocking_if_unresolved":true,"default_behavior":"Preserve original notation and route ambiguity."},
+    {"hook_id":"TE-DH-008","question":"Which note types, locations, and appendix relationships are required?","owner":"MWM chapter/production authority","blocking_if_unresolved":false,"default_behavior":"Record structure and flag unscoped note/appendix behavior."},
+    {"hook_id":"TE-DH-009","question":"What production architecture governs cross-document references and compilation?","owner":"MWM production authority","blocking_if_unresolved":true,"default_behavior":"Do not infer cross-document target/update behavior."},
+    {"hook_id":"TE-DH-010","question":"Are automatic asset resolution, dimensions, and width checks required, and at what stage?","owner":"MWM production authority","blocking_if_unresolved":false,"default_behavior":"Record metadata and flag unconfigured checks."}
+  ]
+}

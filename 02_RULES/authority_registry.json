@@ -1,0 +1,15 @@
+{
+  "registry_id":"MWM-TE-AUTHORITY",
+  "version":"0.1.0",
+  "tiers":[
+    {"tier":1,"id":"mwm_project_authority","status":"controlling","notes":"MWM guidance and approved decisions."},
+    {"tier":2,"id":"mwm_technical_profile","status":"controlling","notes":"Volume, chapter, production, and output-format profile."},
+    {"tier":3,"id":"delegated_domain_rule","status":"controlling_only_if_delegated","notes":"APA or discipline-specific notation only within explicit scope."},
+    {"tier":4,"id":"template_production_profile","status":"assigned_behavior","notes":"Conflicts are reported, not blended silently."},
+    {"tier":5,"id":"structured_exchange_standard","status":"implementation_reference","notes":"JATS or similar object/relationship patterns."},
+    {"tier":6,"id":"accessibility_standard","status":"implementation_reference","notes":"WCAG/WAI principles do not certify a format by themselves."},
+    {"tier":7,"id":"publisher_tool_documentation","status":"implementation_reference","notes":"Word, vendor, and tool behavior."},
+    {"tier":8,"id":"model_inference","status":"noncontrolling","notes":"Suggests or explains only; cannot infer identity, rights, or meaning."}
+  ],
+  "external_boundary":"Chicago, JATS, WCAG/WAI, NIST, Microsoft Word, publisher, and tool documentation are technical references unless explicitly adopted by MWM."
+}

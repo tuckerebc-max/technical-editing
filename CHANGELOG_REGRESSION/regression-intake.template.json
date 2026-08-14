@@ -1,0 +1,20 @@
+{
+  "regression_id":"TE-REG-example-001",
+  "reported_at":"2026-08-13",
+  "reported_by":"technical QA",
+  "source":"fixture",
+  "trigger":"Describe the object, dependency, rule, handoff, or release condition that exposed the failure.",
+  "fixture_or_run_id":"FX-ERR-005",
+  "observed_behavior":"Describe what the package did.",
+  "expected_behavior":"Describe the expected behavior grounded in the Technical Editing specification and active rule.",
+  "severity":"high",
+  "status":"open",
+  "owner":"MWM technical authority",
+  "affected_rule_ids":["TE-XREF-001"],
+  "affected_decision_hooks":[],
+  "affected_object_ids":["XREF-example-001"],
+  "reproduction":["Run the fixture or provide the smallest reproducible manuscript/object package."],
+  "resolution":"Pending triage; no MWM profile decision is implied.",
+  "replacement_fixture_ids":[],
+  "verified_at":null
+}

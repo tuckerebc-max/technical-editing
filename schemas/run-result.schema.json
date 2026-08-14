@@ -1,0 +1,25 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/run-result.schema.json",
+  "title":"MWM TE Run Result",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["run_id","specification_id","specification_version","project_profile","stage","output_format","parser_coverage","summary","release_status","objects","findings","completeness_records","decisions","handoff_dependencies"],
+  "properties":{
+    "run_id":{"type":"string"},
+    "specification_id":{"const":"MWM-TE-SPEC"},
+    "specification_version":{"type":"string"},
+    "project_profile":{"type":"string"},
+    "style_registry_version":{"type":"string"},
+    "stage":{"type":"string","enum":["intake","technical_edit","production_handoff","proof_dependency"]},
+    "output_format":{"type":"string","enum":["docx","pdf","jats","typeset_package"]},
+    "parser_coverage":{"type":"string","enum":["high","partial","low"]},
+    "summary":{"type":"object","additionalProperties":false,"required":["headings_reviewed","tables_reviewed","figures_reviewed","captions_reviewed","cross_references_reviewed","links_reviewed","findings_total","blocking_findings","escalations"],"properties":{"headings_reviewed":{"type":"integer","minimum":0},"tables_reviewed":{"type":"integer","minimum":0},"figures_reviewed":{"type":"integer","minimum":0},"captions_reviewed":{"type":"integer","minimum":0},"cross_references_reviewed":{"type":"integer","minimum":0},"links_reviewed":{"type":"integer","minimum":0},"findings_total":{"type":"integer","minimum":0},"blocking_findings":{"type":"integer","minimum":0},"escalations":{"type":"integer","minimum":0}}},
+    "release_status":{"type":"string","enum":["ready","ready_with_conditions","not_ready"]},
+    "objects":{"type":"array","items":{"$ref":"object-record.schema.json"}},
+    "findings":{"type":"array","items":{"$ref":"finding.schema.json"}},
+    "completeness_records":{"type":"array","items":{"$ref":"object-completeness.schema.json"}},
+    "decisions":{"type":"array","items":{"$ref":"decision-record.schema.json"}},
+    "handoff_dependencies":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["owner_family","dependency_type","object_ids","status"],"properties":{"owner_family":{"type":"string"},"dependency_type":{"type":"string"},"object_ids":{"type":"array","items":{"type":"string"}},"status":{"type":"string","enum":["open","recorded","resolved"]}}}}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "policy_id":"MWM-TE-REGRESSION-POLICY",
+  "version":"0.1.0",
+  "principles":[
+    "Capture every production or proof technical failure before changing the package.",
+    "A reproducible defect receives a fixture or a documented reason why a fixture is not appropriate.",
+    "Object identity, dependency, rights, accessibility, quantitative meaning, and cross-family boundary failures are zero-tolerance release risks.",
+    "A rule or profile change records authority, scope, impact, decision hooks, affected object types, and rollback conditions.",
+    "Unresolved MWM technical profile decisions remain hooks; regression repair may not silently decide them."
+  ],
+  "severity_response":{"critical":"contain immediately, hold or rollback, notify owner, add fixture","high":"triage before next release, add or amend fixture, require verification","medium":"schedule repair and monitor, add fixture when reproducible","low":"record and review in maintenance cycle"},
+  "required_artifacts":["regression_intake","production_failure_when_applicable","affected_rule_or_hook","object_or_dependency_evidence","fixture_result","changelog_entry"],
+  "release_rule":"No unresolved critical or high target failure, identity inference, rights inference, quantitative meaning change, protected-name change, stale dependency, false accessibility claim, or false PASS may ship."
+}

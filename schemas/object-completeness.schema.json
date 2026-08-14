@@ -1,0 +1,16 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/object-completeness.schema.json",
+  "title":"MWM TE Object Completeness Record",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["object_id","object_type","required_fields","overall_status","dependencies"],
+  "properties":{
+    "object_id":{"type":"string"},
+    "object_type":{"type":"string","enum":["figure","table","heading","appendix","note","equation","link","cross_reference","caption","asset"]},
+    "required_fields":{"type":"object","additionalProperties":{"type":"string","enum":["pass","pending","needs_review","blocked","not_applicable","not_checked"]}},
+    "overall_status":{"type":"string","enum":["ready","ready_with_conditions","not_ready","not_checked"]},
+    "dependencies":{"type":"array","items":{"type":"string"}},
+    "missing_or_uncertain":{"type":"array","items":{"type":"string"}}
+  }
+}

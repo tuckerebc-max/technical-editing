@@ -1,0 +1,16 @@
+{
+  "run_id":"MWM-TE-example-001",
+  "manuscript_file":"example-chapter.docx",
+  "manuscript_version":"draft-01",
+  "project_profile":"MWM-TECH-PROFILE-UNSET",
+  "style_registry_version":"MWM-SGI-RULES@0.1.0",
+  "stage":"technical_edit",
+  "output_format":"docx",
+  "asset_manifest":"MWM-ASSET-MANIFEST-UNSET",
+  "exception_register":"MWM-EXCEPTIONS-UNSET",
+  "prior_run_id":null,
+  "parser_version":"parser-UNSET",
+  "ownership_map":"MWM-OWNER-MAP-UNSET",
+  "surfaces":["headings","tables","figures","captions","cross_references","assets","accessibility","permissions"],
+  "fields_expected":true
+}

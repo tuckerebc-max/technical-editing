@@ -1,0 +1,7 @@
+interface:
+  display_name: "Technical Editing"
+  short_description: "Typed object integrity and handoff"
+  default_prompt: "Use $technical-editing to validate technical objects, dependencies, accessibility and production handoff."
+
+policy:
+  allow_implicit_invocation: true

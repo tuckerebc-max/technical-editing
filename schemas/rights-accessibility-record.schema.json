@@ -1,0 +1,22 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/rights-accessibility-record.schema.json",
+  "title":"MWM TE Rights and Accessibility Record",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["record_id","object_id","rights_status","permission_evidence","credit_line","rights_owner","alternate_text_status","accessibility_evidence","output_format","status"],
+  "properties":{
+    "record_id":{"type":"string","pattern":"^(PERM|ALT)-[A-Za-z0-9._-]+$"},
+    "object_id":{"type":"string"},
+    "rights_status":{"type":"string","enum":["owned","licensed","public_domain","open_license","permission_pending","unknown","not_applicable"]},
+    "permission_evidence":{"type":["string","null"]},
+    "credit_line":{"type":["string","null"]},
+    "rights_owner":{"type":["string","null"]},
+    "alternate_text_status":{"type":"string","enum":["present","missing","needs_review","not_applicable","pending"]},
+    "alternate_text_record_id":{"type":["string","null"]},
+    "accessibility_evidence":{"type":["string","null"]},
+    "output_format":{"type":"string","enum":["docx","pdf","jats","typeset_package"]},
+    "status":{"type":"string","enum":["verified","pending","blocked","not_applicable","needs_review"]},
+    "dependencies":{"type":"array","items":{"type":"string"}}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "cross_reference_id":"XREF-014",
+  "raw_text":"See Figure 3",
+  "source_locator":"example-chapter.docx#body.p8.paragraph3",
+  "target_object_id":"FIG-003",
+  "target_exists":true,
+  "visible_target_text":"Figure 3",
+  "field_or_link_type":"live_field",
+  "update_test":"pass",
+  "status":"verified",
+  "dependencies":["FIG-003","CAP-003"],
+  "evidence":["field code inspected","reorder test passed"]
+}

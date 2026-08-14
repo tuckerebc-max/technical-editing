@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/cross-reference-record.schema.json",
+  "title":"MWM TE Cross-Reference Record",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["cross_reference_id","raw_text","source_locator","target_object_id","target_exists","visible_target_text","field_or_link_type","update_test","status"],
+  "properties":{
+    "cross_reference_id":{"type":"string","pattern":"^XREF-[A-Za-z0-9._-]+$"},
+    "raw_text":{"type":"string"},
+    "source_locator":{"type":"string"},
+    "target_object_id":{"type":["string","null"]},
+    "target_exists":{"type":"boolean"},
+    "visible_target_text":{"type":["string","null"]},
+    "field_or_link_type":{"type":"string","enum":["live_field","hyperlink","static_text","unknown"]},
+    "update_test":{"type":"string","enum":["pass","fail","not_run","not_applicable"]},
+    "status":{"type":"string","enum":["verified","mismatch","broken","unresolved","permitted"]},
+    "dependencies":{"type":"array","items":{"type":"string"}},
+    "evidence":{"type":"array","items":{"type":"string"}}
+  }
+}

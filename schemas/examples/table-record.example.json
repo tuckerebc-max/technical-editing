@@ -1,0 +1,15 @@
+{
+  "table_id":"TAB-002",
+  "number":2,
+  "title":"Example table title",
+  "header_structure":"multi_level",
+  "stub_structure":"grouped",
+  "data_source":"Data source record pending project decision.",
+  "notes":["Example note record."],
+  "source_or_credit":"Source/credit record pending.",
+  "alt_or_summary_record_id":"ALT-002",
+  "callouts":["See Table 2"],
+  "cross_references":["XREF-015"],
+  "dependencies":["ALT-002","XREF-015"],
+  "verification":["header structure reviewed","summary pending"]
+}

@@ -1,0 +1,8 @@
+{
+  "object_id":"FIG-003",
+  "object_type":"figure",
+  "required_fields":{"asset":"pass","number":"pass","caption":"pass","callout":"pass","source_or_credit":"pending","permissions":"pending","alternate_text":"needs_review","resolution_and_size":"pass","cross_references":"pass"},
+  "overall_status":"ready_with_conditions",
+  "dependencies":["PERM-003","ALT-003","XREF-014"],
+  "missing_or_uncertain":["Project permission evidence and output-format accessibility decision are not supplied."]
+}

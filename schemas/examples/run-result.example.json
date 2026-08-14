@@ -1,0 +1,17 @@
+{
+  "run_id":"MWM-TE-example-001",
+  "specification_id":"MWM-TE-SPEC",
+  "specification_version":"0.1.0-draft",
+  "project_profile":"MWM-TECH-PROFILE-UNSET",
+  "style_registry_version":"MWM-SGI-RULES@0.1.0",
+  "stage":"technical_edit",
+  "output_format":"docx",
+  "parser_coverage":"partial",
+  "summary":{"headings_reviewed":4,"tables_reviewed":1,"figures_reviewed":1,"captions_reviewed":1,"cross_references_reviewed":1,"links_reviewed":0,"findings_total":1,"blocking_findings":0,"escalations":1},
+  "release_status":"ready_with_conditions",
+  "objects":[{"object_id":"FIG-003","object_type":"figure","label":"Figure 3","title_or_caption":"Example figure caption","source_locator":"example-chapter.docx#figure-3","callouts":["body.p8.paragraph3"],"dependencies":["XREF-014"],"status":"ready_with_conditions","stage":"copyedit","representations":[{"kind":"manuscript","locator":"example-chapter.docx#figure-3","version":"draft-01","sha256":null}]}],
+  "findings":[{"finding_id":"TE-20260813-0001","skill_id":"TE-03","object_id":"XREF-014","owner_category":"technical","rule_id":"TE-XREF-002","rule_version":"0.1.0","severity":"high","status":"needs_review","action":"ESCALATE","confidence":0.93,"location":{"file":"example-chapter.docx","locator":"body.p8.paragraph3","context_type":"body"},"observed":{"raw_text":"See Figure 3","structural_state":"static_text","original_value":null},"expected":{"value":"Live cross-reference to FIG-003","rule_scope":"Output profile decision required."},"evidence":[{"source_id":"MWM-TE-SPEC","locator":"§10 Step 5","method":"field inspection","relevance":"Update behavior."}],"dependencies":["FIG-003"],"proposed_change":null,"reason":"Static field policy is not decided.","owner":"MWM production authority","decision_log_id":"TE-DEC-example-001","disposition":"Hold pending decision."}],
+  "completeness_records":[{"object_id":"FIG-003","object_type":"figure","required_fields":{"asset":"pass","number":"pass","caption":"pass","callout":"pass","source_or_credit":"pending","permissions":"pending","alternate_text":"needs_review","resolution_and_size":"pass","cross_references":"pass"},"overall_status":"ready_with_conditions","dependencies":["XREF-014"],"missing_or_uncertain":["Project decision pending."]}],
+  "decisions":[{"decision_id":"TE-DEC-example-001","object_id":"FIG-003","question":"Are live Word fields required at this stage?","evidence":[{"type":"field_inspection","locator":"body.p8.paragraph3","description":"Static reference observed."}],"owner":"MWM production authority","options":["Require live field","Permit static text by profile"],"consequences":["Changes field gate."],"requested_decision":"Record active field policy.","status":"open","decision":null,"decided_by":null,"decided_at":null,"decision_hook_id":"TE-DH-002"}],
+  "handoff_dependencies":[{"owner_family":"Production","dependency_type":"field_policy_decision","object_ids":["FIG-003","XREF-014"],"status":"open"}]
+}

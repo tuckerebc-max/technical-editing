@@ -1,0 +1,20 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/object-record.schema.json",
+  "title":"MWM TE Typed Object Record",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["object_id","object_type","label","title_or_caption","source_locator","callouts","dependencies","status","stage","representations"],
+  "properties":{
+    "object_id":{"type":"string","pattern":"^(FIG|TAB|HEAD|APP|NOTE|EQ|LINK|XREF|CAP|ASSET)-[A-Za-z0-9._-]+$"},
+    "object_type":{"type":"string","enum":["figure","table","heading","appendix","note","equation","link","cross_reference","caption","asset"]},
+    "label":{"type":["string","null"]},
+    "title_or_caption":{"type":["string","null"]},
+    "source_locator":{"type":"string","minLength":1},
+    "callouts":{"type":"array","items":{"type":"string"}},
+    "dependencies":{"type":"array","items":{"type":"string"}},
+    "status":{"type":"string","enum":["complete","partial","blocked","not_checked","ready_with_conditions"]},
+    "stage":{"type":"string","enum":["author","copyedit","production","proof"]},
+    "representations":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["kind","locator","version"],"properties":{"kind":{"type":"string","enum":["manuscript","asset","structured","proof"]},"locator":{"type":"string"},"version":{"type":"string"},"sha256":{"type":["string","null"],"pattern":"^[A-Fa-f0-9]{64}$"}}}}
+  }
+}

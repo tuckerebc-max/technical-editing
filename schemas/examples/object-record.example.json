@@ -1,0 +1,15 @@
+{
+  "object_id":"FIG-003",
+  "object_type":"figure",
+  "label":"Figure 3",
+  "title_or_caption":"Example figure caption",
+  "source_locator":"example-chapter.docx#figure-3",
+  "callouts":["body.p8.paragraph3"],
+  "dependencies":["XREF-014","PERM-003","ALT-003"],
+  "status":"ready_with_conditions",
+  "stage":"copyedit",
+  "representations":[
+    {"kind":"manuscript","locator":"example-chapter.docx#figure-3","version":"draft-01","sha256":null},
+    {"kind":"asset","locator":"figure-03.tif","version":"v2","sha256":null}
+  ]
+}

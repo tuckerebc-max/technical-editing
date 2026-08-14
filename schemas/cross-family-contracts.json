@@ -1,0 +1,18 @@
+{
+  "contract_id":"MWM-TE-CROSS-FAMILY-CONTRACTS",
+  "version":"0.1.0",
+  "inbound":[
+    {"family":"Editorial QA & Orchestration","contract":"run mode, stage, output format, and ownership map","required_fields":["run_id","stage","output_format","ownership_map"]},
+    {"family":"Style-Guide Implementation","contract":"active style/profile versions for labels, capitalization, and delegated technical conventions","required_fields":["style_registry_version","rule_ids_when_relevant"]},
+    {"family":"Reference & Citation Integrity","contract":"source/citation identity and reference relationship identifiers","required_fields":["source_or_credit","citation_dependency_when_relevant"]}
+  ],
+  "outbound":[
+    {"family":"Style-Guide Implementation","contract":"technical structure and object-label facts; TE does not decide language style","payload_fields":["object_ids","labels","structure_findings","style_route"]},
+    {"family":"Reference & Citation Integrity","contract":"structural source/credit and URL relationship flags; RCI retains citation identity ownership","payload_fields":["object_id","source_locator","citation_dependency","technical_finding_id"]},
+    {"family":"Scholarly/Editorial Integrity","contract":"substantive meaning, data, equation, statistical-symbol, or terminology questions","payload_fields":["object_id","original_value","observed_state","decision_request"]},
+    {"family":"Chapter Completeness & Production Readiness","contract":"missing required component and production handoff dependencies","payload_fields":["object_completeness","asset_status","permissions_status","handoff_dependency"]},
+    {"family":"Proof & Post-Typesetting Review","contract":"proof-dependent object, numbering, field, and layout checks","payload_fields":["object_ids","dependency_graph","proof_rerun_conditions"]},
+    {"family":"Editorial QA & Orchestration","contract":"run result, release status, blockers, and cross-family handoff ledger","payload_fields":["run_id","release_status","finding_ids","handoff_dependencies"]}
+  ],
+  "boundary_invariants":["TE does not rewrite quantitative meaning","TE does not infer rights or identity","TE does not replace SGI language authority","TE does not verify citation identity","TE does not claim full accessibility conformance","TE does not authorize publication"]
+}

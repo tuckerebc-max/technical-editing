@@ -1,0 +1,14 @@
+{
+  "integration_set_id":"MWM-TE-INTEGRATION-01",
+  "version":"0.1.0",
+  "cases":[
+    {"fixture_id":"FX-INT-001","sequence":["load_profile","inventory_objects","validate_dependencies","run_findings","release_gate"],"assertions":["coverage high","records complete","release_status=ready"]},
+    {"fixture_id":"FX-INT-002","sequence":["resolve_target","check_identity","release_gate"],"assertions":["missing target remains blocked","release_status=not_ready"]},
+    {"fixture_id":"FX-INT-003","sequence":["object_completeness","rights_check","accessibility_check","release_gate"],"assertions":["permission and alt-text gaps remain visible","release_status=not_ready"]},
+    {"fixture_id":"FX-INT-004","sequence":["change_event","dependency_graph","dependent_rerun","release_gate"],"assertions":["local repair cannot hide stale dependents","release_status=not_ready"]},
+    {"fixture_id":"FX-INT-005","sequence":["classify_expression","preserve_original","create_decision_request","handoff"],"assertions":["statistical meaning is preserved","route=Scholarly/Editorial Integrity"]},
+    {"fixture_id":"FX-INT-006","sequence":["load_asset_manifest","check_identity","check_metadata","release_gate"],"assertions":["missing manifest blocks handoff","release_status=not_ready"]},
+    {"fixture_id":"FX-INT-007","sequence":["proof_change","recalculate_dependencies","record_rerun","release_gate"],"assertions":["proof-dependent checks are recorded","release_status=not_ready"]},
+    {"fixture_id":"FX-INT-008","sequence":["record_evidence","assign_owner","list_options","handoff"],"assertions":["TE does not decide design or rights","release_status=ready_with_conditions"]}
+  ]
+}

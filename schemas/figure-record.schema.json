@@ -1,0 +1,26 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://mwm.local/schemas/te/figure-record.schema.json",
+  "title":"MWM TE Figure Record",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["figure_id","asset_file","asset_version","number","caption","legend_or_key","callouts","source_or_credit","permission_record_id","alt_text_record_id","resolution_dpi","intended_width_mm","placement_state","cross_references","verification"],
+  "properties":{
+    "figure_id":{"type":"string","pattern":"^FIG-[A-Za-z0-9._-]+$"},
+    "asset_file":{"type":"string","minLength":1},
+    "asset_version":{"type":"string","minLength":1},
+    "number":{"type":"integer","minimum":1},
+    "caption":{"type":["string","null"]},
+    "legend_or_key":{"type":["string","null"]},
+    "callouts":{"type":"array","items":{"type":"string"}},
+    "source_or_credit":{"type":["string","null"]},
+    "permission_record_id":{"type":["string","null"]},
+    "alt_text_record_id":{"type":["string","null"]},
+    "resolution_dpi":{"type":["number","null"],"minimum":0},
+    "intended_width_mm":{"type":["number","null"],"minimum":0},
+    "placement_state":{"type":"string","enum":["inline","separate","production_asset","unknown"]},
+    "cross_references":{"type":"array","items":{"type":"string","pattern":"^XREF-[A-Za-z0-9._-]+$"}},
+    "dependencies":{"type":"array","items":{"type":"string"}},
+    "verification":{"type":"array","items":{"type":"string"}}
+  }
+}

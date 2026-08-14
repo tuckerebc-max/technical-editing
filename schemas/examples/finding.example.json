@@ -1,0 +1,22 @@
+{
+  "finding_id":"TE-20260813-0001",
+  "skill_id":"TE-03",
+  "object_id":"XREF-014",
+  "owner_category":"technical",
+  "rule_id":"TE-XREF-002",
+  "rule_version":"0.1.0",
+  "severity":"high",
+  "status":"needs_review",
+  "action":"ESCALATE",
+  "confidence":0.93,
+  "location":{"file":"example-chapter.docx","locator":"body.p8.paragraph3","context_type":"body"},
+  "observed":{"raw_text":"See Figure 3","structural_state":"static_text","original_value":null},
+  "expected":{"value":"Live cross-reference to FIG-003","rule_scope":"Output profile decision required."},
+  "evidence":[{"source_id":"MWM-TE-SPEC","locator":"§10 Step 5","method":"field and object-graph inspection","relevance":"Cross-reference update behavior."}],
+  "dependencies":["FIG-003","CAP-003"],
+  "proposed_change":null,
+  "reason":"The reference target is visible, but the active profile does not establish whether static text is acceptable.",
+  "owner":"MWM production authority",
+  "decision_log_id":"TE-DEC-example-001",
+  "disposition":"Hold until TE-DH-002 is decided."
+}

@@ -1,0 +1,7 @@
+{
+  "control_set_id":"MWM-TE-ADVERSARIAL-NEGATIVE-01",
+  "version":"0.1.0",
+  "adversarial_fixture_ids":["FX-ADV-001","FX-ADV-002","FX-ADV-003","FX-ADV-004","FX-ADV-005","FX-ADV-006","FX-ADV-007","FX-ADV-008","FX-ADV-009","FX-ADV-010"],
+  "negative_control_fixture_ids":["FX-NEG-001","FX-NEG-002","FX-NEG-003","FX-NEG-004","FX-NEG-005","FX-NEG-006","FX-NEG-007","FX-NEG-008"],
+  "required_behavior":["Do not infer object identity from visual similarity","Do not infer permission from public visibility","Do not change quantitative meaning","Do not claim accessibility conformance from visual appearance","Do not accept static fields without a profile decision","Rerun dependent checks after object changes","Route style, citation, substantive, completeness, production, and proof ownership"]
+}
