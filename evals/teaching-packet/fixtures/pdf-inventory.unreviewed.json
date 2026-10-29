@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "source_name": "garden-packet.pdf",
+  "source_kind": "pdf",
+  "coverage": "page-by-page visual inventory",
+  "visual_inventory_review": {
+    "status": "unreviewed",
+    "reviewer": "",
+    "page_count": 2,
+    "pages": []
+  },
+  "blocks": [
+    {
+      "kind": "heading",
+      "level": 1,
+      "text": "Garden measurement packet",
+      "id": "B0001",
+      "locator": "page/1/block/1"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Student copy. Distribute only the student activity.",
+      "id": "B0002",
+      "locator": "page/1/block/2"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "Student activity",
+      "id": "B0003",
+      "locator": "page/1/block/3"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Read Table 1, then use Figure 1 to compare the measurements.",
+      "id": "B0004",
+      "locator": "page/1/block/4"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Table 1. Garden observations",
+      "id": "B0005",
+      "locator": "page/1/block/5"
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Plant",
+          "Start height (cm)",
+          "End height (cm)"
+        ],
+        [
+          "Bean",
+          "4",
+          "10"
+        ],
+        [
+          "Pea",
+          "6",
+          "9"
+        ]
+      ],
+      "id": "B0006",
+      "locator": "page/1/block/6"
+    },
+    {
+      "kind": "figure",
+      "asset": "assets/figure-001.png",
+      "alt": "Two bars labeled Start: 4 and End: 10, showing bean height in centimeters.",
+      "id": "B0007",
+      "locator": "page/1/block/7",
+      "sha256": "b296d5640c6f64e6ddf2b01af9cb37764af6de7ff0ef9cc356d9d2b284c6b4ff"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Figure 1. Bean height changes from 4 cm to 10 cm.",
+      "id": "B0008",
+      "locator": "page/1/block/8"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Q1. How many centimeters did the bean grow? Show the subtraction.",
+      "id": "B0009",
+      "locator": "page/1/block/9"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Q2. Which plant grew more? Use both differences.",
+      "id": "B0010",
+      "locator": "page/1/block/10"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Explain your reasoning.",
+      "id": "B0011",
+      "locator": "page/1/block/11"
+    },
+    {
+      "kind": "heading",
+      "level": 1,
+      "text": "Teacher guide",
+      "id": "B0012",
+      "locator": "page/2/block/12"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Teacher copy. Keep this complete answer key separate from student distribution.",
+      "id": "B0013",
+      "locator": "page/2/block/13"
+    },
+    {
+      "kind": "heading",
+      "level": 2,
+      "text": "Answer key",
+      "id": "B0014",
+      "locator": "page/2/block/14"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Table 2. Worked answers",
+      "id": "B0015",
+      "locator": "page/2/block/15"
+    },
+    {
+      "kind": "table",
+      "rows": [
+        [
+          "Item",
+          "Worked answer",
+          "Common error"
+        ],
+        [
+          "Q1",
+          "10 - 4 = 6 cm.",
+          "Subtracting in reverse order."
+        ],
+        [
+          "Q2",
+          "Bean: 6 cm; pea: 3 cm.\nBean grew 3 cm more.",
+          "Comparing final heights instead of growth."
+        ]
+      ],
+      "id": "B0016",
+      "locator": "page/2/block/16"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Rubric: 1 point for each correct difference; 1 point for comparison with units.",
+      "id": "B0017",
+      "locator": "page/2/block/17"
+    },
+    {
+      "kind": "paragraph",
+      "text": "Explain your reasoning.",
+      "id": "B0018",
+      "locator": "page/2/block/18"
+    }
+  ]
+}

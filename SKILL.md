@@ -1,6 +1,6 @@
 ---
 name: technical-editing
-description: Validate typed technical objects and production-facing chapter integrity across headings, tables, figures, captions, fields, cross-references, acronyms, quantitative notation, URLs, notes, appendices, accessibility, permissions, assets, and handoff dependencies. Use for MWM technical-editing or production-handoff review; do not use for copyediting, SGI language enforcement, citation identity, substantive claims, legal rights decisions, or final proof review.
+description: Validate typed technical objects and production-facing chapter integrity across headings, tables, figures, captions, fields, cross-references, acronyms, quantitative notation, URLs, notes, appendices, accessibility, permissions, assets, and handoff dependencies. Use for technical editing, production handoff, or preserving complete teaching packets and answer guides during DOCX/PDF-to-Markdown transformations. Do not use for copyediting, SGI language enforcement, citation identity, substantive claims, legal rights decisions, or final proof review.
 ---
 
 # Technical Editing
@@ -9,6 +9,23 @@ Run TE as a typed technical-object integrity and handoff workflow. Treat
 `01_SPECIFICATION.md` as design authority, `02_RULES/` as the versioned
 technical rule/configuration layer, `schemas/` as contracts, `evals/` as
 acceptance tests, and `CHANGELOG_REGRESSION/` as the maintenance record.
+
+## Transformation preservation preflight
+
+When converting or extracting a teaching packet or answer guide, read
+[references/teaching-packet-preservation.md](references/teaching-packet-preservation.md)
+before extraction. Use its bounded preservation workflow, source/output object
+inventory, student/teacher scope checks, and synthetic regression tests. This
+mode produces supplementary TE-02/TE-08 evidence, not a full technical release
+decision. Source text, ordered table cells, figures, captions, tasks, worked
+answers, and rubrics must survive within the authorized scope; an outline or
+paragraph-only extraction is not a complete packet. Do not silently repair an
+answer's meaning or promote a mechanical pass to pedagogical approval.
+
+The optional `scripts/teaching_packet_preservation.py` supports a deliberately
+narrow DOCX profile and reviewed PDF inventories. Unsupported structures require
+a richer converter and explicit review, not deletion to make the helper pass.
+For a full editorial-stage review, continue with the manifest and gates below.
 
 ## Execute
 
