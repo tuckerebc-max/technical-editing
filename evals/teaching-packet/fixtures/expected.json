@@ -1,0 +1,20 @@
+{
+  "text_blocks": 15,
+  "tables": 2,
+  "table_cells": 18,
+  "figures": 1,
+  "ordered_blocks": 18,
+  "questions": [
+    "Q1",
+    "Q2"
+  ],
+  "answers": [
+    "10 - 4 = 6 cm.",
+    "Bean: 6 cm; pea: 3 cm.\nBean grew 3 cm more."
+  ],
+  "repeated_paragraph": {
+    "text": "Explain your reasoning.",
+    "count": 2
+  },
+  "source": "newly authored synthetic fixture; not a real loss incident"
+}
